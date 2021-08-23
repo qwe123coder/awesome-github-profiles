@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Read/Write data into README
         uses: eddiejaoudecommunity/gh-actions-html-table-generator@v0.1
+      - uses: actions/setup-node@v2
+      - uses: qwe123coder/jsonabc@1
         with:
           json-file-path: "data.json"
           github-token: ${{ secrets.GITHUB_TOKEN }}
