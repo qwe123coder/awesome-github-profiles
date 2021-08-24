@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Read/Write data into README
-        uses: qwe123coder/gh-actions-html-table-generator@v0.1
+      -  uses: qwe123coder/gh-actions-html-table-generator@v0.1
       - uses: actions/setup-node@v2
         with:
           json-file-path: "data.json"
